@@ -1,5 +1,5 @@
 #Name: Planning an event
-#Author: Nolan
+#Author: Nolan Savage
 #Date: 2026-09-21
 #Description: Calculates the total amount of ice cream sold in 
 #milliliters based on user input for different cone sizes
