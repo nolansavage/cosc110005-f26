@@ -12,7 +12,7 @@
 #4. Display the total amount of ice cream sold.
 
 
-
+#INPUT
 #getting the number of kiddie cones sold from the user
 kiddie = int(input("Enter number of kiddie cones sold: "))
 
@@ -25,12 +25,14 @@ medium = int(input("Enter number of medium cones sold: "))
 #getting the number of large cones sold from the user
 large = int(input("Enter number of large cones sold: "))
 
+
+#PROCESSING
 #calculating the total number of scoops sold
 total_scoops = (kiddie * 0.5) + (small * 1) + (medium * 2) + (large * 3)
 
 #calculating the total amount of ice cream sold in milliliters
 total_ml = total_scoops * 120
 
-
+#OUTPUT
 #displays the total amount of ice cream sold in milliliters
 print("Total ice cream sold:", total_ml, "mL")
