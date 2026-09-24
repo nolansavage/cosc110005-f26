@@ -24,7 +24,7 @@
 # CONSTANTS
 # This is the total square footage of the resevoir that is 5000m^2
 # This number will not change so I chose to make it a CONSTANT
-RESEVOIR = 5000
+RESERVOIR = 5000
 
 
 # INPUT
@@ -40,24 +40,57 @@ duck_dimensions = float(dimension_1 * dimension_2)
 
 
 # PROCESS
-# I need to take the duck area dimensions from cm to m by dividing the duck dimensions by 100
+# I need to take the duck length and width dimensions from cm to m by dividing the duck dimensions by 10000
 # Calculating the area of the rubber duck from the dimensions inputted by the user to get 
-# the area of the duck
-duck_area = float(duck_dimensions / 100)
-
-
-# Dividing the full area of the resevoir by the duck dimensions will tell me how many ducks
-# can fit into the resevoir total
-filled_resevoir = RESEVOIR / duck_dimensions
+# the meter area of the duck
+duck_area = float(duck_dimensions / 10000)
 
 
 # OUTPUT
 # My output will tell the user how many rubber ducks will fit into
-# a resevoir of 5000m^2
+# a resevoir of 5000m^2 to the second decimal point
 
-duck_amount = RESEVOIR / duck_area
+# This is the math for caluclating the amount of ducks that can fit using the reservoir
+# size by the duck area. 
+duck_amount = RESERVOIR / duck_area
+
 
 # Telling the user in plain english how many ducks will fit in the resevoir
 print(f'The resevoir can hold: {duck_amount:.2f} Ducks')
 
 
+# Desk Check #1
+# Input:
+# dimension_1 = 10
+# dimension_2 = 10
+#
+# duck_dimensions = 10 * 10
+#                 = 100 cm^2
+#
+# duck_area = 100 / 10000
+#           = 0.01 m^2
+#
+# duck_amount = 5000 / 0.01
+#             = 500000.00
+#
+# Output:
+# The resevoir can hold: 500000.00 Ducks
+
+# ------------------------------------------------- #
+
+# Desk Check #2
+# Input:
+# dimension_1 = 15
+# dimension_2 = 8
+#
+# duck_dimensions = 15 * 8
+#                 = 120 cm^2
+#
+# duck_area = 120 / 10000
+#           = 0.012 m^2
+#
+# duck_amount = 5000 / 0.012
+#             = 416666.67
+#
+# Output:
+# The resevoir can hold: 416666.67 Ducks
