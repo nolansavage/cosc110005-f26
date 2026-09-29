@@ -40,14 +40,21 @@ if name == "":
 student_ID = input("Please enter your 9 digit Student ID Number: ")
 
 if len(student_ID) != 9:
-    print("You didnt enter a valid Student ID Number")
+    print("You didnt enter a valid Student ID Number.")
 
 
 
-# This is the variable for the number of courses the user is in, 1-8
+# This is the variable for the number of courses the user is in, 1-8.
+# It will validate by checking if the user has entered a number from 1-8 by seeing if they
+# entered a number 'lower than' 1, and if the number is 'greater than' 8.
+course_amount = int(input("Please enter amount of courses you are taking 1-8: "))
 
-course_amount =
+if course_amount < 1 or course_amount > 8:
+    print("You didnt enter a proper amount of courses.")
 
+
+
+# This is the variable for the exercise mark
 
 # PROCESS
 # I will get the inputs from the user and calculate with the program if the values
