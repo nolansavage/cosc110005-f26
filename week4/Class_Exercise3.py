@@ -22,9 +22,9 @@
 
 # INPUT
 
-# This is the variable that will store the user's name.
+# This is the variable that will store the Student Name.
 # The validation checks to see if the inputted value is blank or not indicating that
-# the user cant have nothing as a name.
+# the user cannot have nothing as a name.
 # Student Name
 name = input("Enter student name: ")
 
@@ -33,11 +33,22 @@ if name == "":
 
 
 
+# This is the variable for the Student ID.
+# The user types in a 9 digit number and the len function is the validation that will check
+# if the length of the input from the user is 9 digits or not, if not then it will error.
+student_ID = input("Please enter your 9 digit Student ID Number: ")
+
+if len(student_ID) != 9:
+    print("You didnt enter a valid Student ID Number")
+
+
+
+
 
 # PROCESS
 # I will get the inputs from the user and calculate with the program if the values
-# align with each variable
-
+# align with each validation. If they do not pass validation then they will get an error
+# message.
 
 
 
