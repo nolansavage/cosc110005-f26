@@ -64,7 +64,7 @@ if course_amount < 1 or course_amount > 8:
 # This is the variable for the exercise mark that will be from 0-100. It will do this by
 # checking if the number is 'less than zero' or 'greater than' 100.
 # Exercise Mark
-exercise_mark = input("Please enter your Exercise Mark from 0-100: ")
+exercise_mark = int(input("Please enter your Exercise Mark from 0-100: "))
 
 if exercise_mark < 0 or exercise_mark > 100:
     print("You did not enter in a valid number from 0-100.")
