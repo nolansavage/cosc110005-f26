@@ -72,9 +72,14 @@ if exercise_mark < 0 or exercise_mark > 100:
 # PROCESS
 # I will get the inputs from the user and calculate with the program if the values
 # align with each validation. If they do not pass validation then they will get an error
-# message.
+# message. 
+# First Attribute Validation: Checks if the input has characters entered and if not it ends.
+# Second Attribute Validation: Checks if the input is not equal to 9 digits in length with
+# the len function.
+# Third Attribute Validation: Checks if the input is 'less than' 1, or 'greater than' 8.
+# Fourth Attribute Validation: Checks if the input is 'less than 0 or 'greater than' 100.
 
-
+# -------------------------------------------------------------------------------------- #
 
 
 # OUTPUT
