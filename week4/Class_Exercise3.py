@@ -35,7 +35,8 @@ if name == "":
 
 # This is the variable for the Student ID.
 # The user types in a 9 digit number and the len function is the validation that will check
-# if the length of the input from the user is 9 digits or not, if not then it will error.
+# if the length of the input from the user is 9 digits or not, if not then the user will
+# get an error message
 student_ID = input("Please enter your 9 digit Student ID Number: ")
 
 if len(student_ID) != 9:
@@ -43,6 +44,9 @@ if len(student_ID) != 9:
 
 
 
+# This is the variable for the number of courses the user is in, 1-8
+
+course_amount =
 
 
 # PROCESS
