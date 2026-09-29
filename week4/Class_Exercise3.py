@@ -1,24 +1,28 @@
 # MAIN INFORMATION
-# Course: COSC 1100
-# Name: in-class assignment #3
+# Course: COSC 1100-05
+# Name: in-class assignment #3: Attributes
 # Author: Nolan Savage
 # Date: 2026-09-29
 # Group: (individual)
 
+# -------------------------------------------------------------------------------------- #
 
 # Description:
 # In this Exercise we will be choosing 4 of the 6 attributes provided by the professor
 # and then we will be adding a validation for each attribute selected.
 
+# -------------------------------------------------------------------------------------- #
 
 # My plan is to get the inputs for 4 different questions and then give the output
 # all at once at the end of the program, but if they dont enter the correct value,
-# the the program will crash
+# the the 
 
+# -------------------------------------------------------------------------------------- #
 
 # CONSTANTS
 # None
 
+# -------------------------------------------------------------------------------------- #
 
 # INPUT
 
@@ -54,7 +58,16 @@ if course_amount < 1 or course_amount > 8:
 
 
 
-# This is the variable for the exercise mark
+# This is the variable for the exercise mark that will be from 0-100. It will do this by
+# checking if the number is 'less than zero' or 'greater than' 100.
+
+exercise_mark = input("Please enter your Exercise Mark from 0-100: ")
+
+if exercise_mark < 0 or exercise_mark > 100:
+    print("You did not enter in a valid number from 0-100.")
+
+
+# -------------------------------------------------------------------------------------- #
 
 # PROCESS
 # I will get the inputs from the user and calculate with the program if the values
