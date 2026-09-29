@@ -12,8 +12,8 @@
 
 
 # My plan is to get the inputs for 4 different questions and then give the output
-# all at once at the end of the program, but if they dont enter the correct value
-# in then the program will crash
+# all at once at the end of the program, but if they dont enter the correct value,
+# the the program will crash
 
 
 # CONSTANTS
@@ -21,12 +21,25 @@
 
 
 # INPUT
-#
+
+# This is the variable that will store the user's name.
+# The validation checks to see if the inputted value is blank or not indicating that
+# the user cant have nothing as a name.
+# Student Name
+name = input("Enter student name: ")
+
+if name == "":
+    print("ERROR: Student name cannot be blank.")
+
+
 
 
 # PROCESS
 # I will get the inputs from the user and calculate with the program if the values
 # align with each variable
+
+
+
 
 
 # OUTPUT
