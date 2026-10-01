@@ -1,6 +1,6 @@
 # MAIN INFORMATION
 # Course: COSC 1100-05
-# Name: In-Class Exercise #3: Attributes
+# Name: In-Class Exercise #3: Selection
 # Author: Nolan Savage
 # Date: 2026-09-29
 # Group: (individual)
