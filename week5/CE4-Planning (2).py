@@ -1,4 +1,14 @@
-#Plan
+# MAIN INFORMATION
+# Course: COSC 1100-05
+# Name: In-Class Exercise #4: Iteration
+# Author: Nolan Savage, Usman Shamroz
+# Date: 2026-10-08
+# Group: 
+
+
+
+
+# Plan
 # The plan is to open the program by sending John a welcome message when opening the program.
 # The opening message will explain what John's options are.. John's options are 1-4, 1-3 being the
 # hotdog inputs so he can enter the number of hotdogs sold. The 4th option will let John tally up
@@ -68,7 +78,6 @@ veggie = 0
 
 # This is the choice variable
 choice = 0
-
 
 # Welcome message
 print('''Hello John! This program is designed to help you
