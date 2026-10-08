@@ -3,9 +3,6 @@
 # Name: In-Class Exercise #4: Iteration
 # Author: Nolan Savage, Usman Shamroz
 # Date: 2026-10-08
-# Group: 
-
-
 
 
 # Plan
@@ -15,60 +12,60 @@
 # the total amount of hot dogs sold so that he can see which hotdogs performed the best.Our program will
 # also loop whenever he chooses to input hotdog's until he chooses the fourth "tally" option.
 
-"""
-OUTPUT: What will the program show?
-Number of Traditional hot dogs sold
-Number of Veggie hot dogs sold
-Number of Veggie hot dogs sold
-Number of Curry hot dogs sold
-Total hot dogs sold 
-Percentage of each type sold 
-Which type was the most popular
-The exit the Program
+# """
+# OUTPUT: What will the program show?
+# Number of Traditional hot dogs sold
+# Number of Veggie hot dogs sold
+# Number of Veggie hot dogs sold
+# Number of Curry hot dogs sold
+# Total hot dogs sold 
+# Percentage of each type sold 
+# Which type was the most popular
+# The exit the Program
 
-"""
-
-
-"""
-INPUT: What does John enter?
-1.Tradtional hot dogs
-2.Veggie hot dogs
-3.Curry hot dogs
-4.Tally option then Exit
-
-John wont always hit these keys so we need to dela with the invalid input when there are too many customers.
-"""
+# """
 
 
-"""
-Process: How will the program work? 
-All the hot dogs sold will be set as 0 
+# """
+# INPUT: What does John enter?
+# 1.Tradtional hot dogs
+# 2.Veggie hot dogs
+# 3.Curry hot dogs
+# 4.Tally option then Exit
 
-Display menu 
+# John wont always hit these keys so we need to dela with the invalid input when there are too many customers.
+# """
 
-repeat until the user enters 4 to exit
-    Get the user's menu choice 
 
-    If choice is 1
-        Ask for the number of traditional hot dogs sold
-        Add the number to the total of traditional hot dogs sold
+# """
+# Process: How will the program work? 
+# All the hot dogs sold will be set as 0 
 
-    If choice is 2
-        Ask for the number of veggie hot dogs sold
-        Add the number to the total of veggie hot dogs sold
+# Display menu 
 
-    If choice is 3
-        Ask for the number of curry hot dogs sold
-        Add the number to the total of curry hot dogs sold
+# repeat until the user enters 4 to exit
+#     Get the user's menu choice 
 
-    If choice is 4
-        Calculate total hot dogs sold
-        Calculate percentage 
-        Display totals and percentages
-        Exit
+#     If choice is 1
+#         Ask for the number of traditional hot dogs sold
+#         Add the number to the total of traditional hot dogs sold
 
-Program will keep looping until John chooses 4
-"""
+#     If choice is 2
+#         Ask for the number of veggie hot dogs sold
+#         Add the number to the total of veggie hot dogs sold
+
+#     If choice is 3
+#         Ask for the number of curry hot dogs sold
+#         Add the number to the total of curry hot dogs sold
+
+#     If choice is 4
+#         Calculate total hot dogs sold
+#         Calculate percentage 
+#         Display totals and percentages
+#         Exit
+
+# Program will keep looping until John chooses 4
+# """
 
 # These are the variables that will store the number of hotdogs sold.
 # The hot dog counter
@@ -82,6 +79,24 @@ choice = 0
 # Welcome message
 print('''Hello John! This program is designed to help you
 tally up the number of hotdogs sold for each type of hotdog''')
+
+
+# This will tell the program that if the input IS NOT 4 then to keep looping inside of the while loop
+# until finished and ready to tally up the totals.
+while choice != 4:
+
+    print("---- HOTDOG MENU ----")
+    print("Please choose which hotdog you would like to edit number sold.")
+    print("1. Traditional Hotdog")
+    print("2. Veggie Hotdog")
+    print("3. Curry Hotdog")
+    print("4. Tally up the totals")
+    print("---- HOTDOG MENU ----")
+
+
+
+
+
 
 
 
