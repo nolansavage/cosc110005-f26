@@ -96,7 +96,7 @@ while choice != 4:
 
 
     # This section is for option selection and inputs
-    choice = ("Which option would you like to select 1-4?")
+    choice = int(input("Which option would you like to select 1-4?"))
 
     if choice == 1:
         amount = int(input("How many Traditional Hotdogs were sold this week: "))
@@ -139,6 +139,14 @@ if hotdog_total > 0:
     curry_percentage = curry / hotdog_total * 100
 
 
+# Hotdog percentage display section
+
+print("------------- Hotdog Percentage Sold --------------")
+print(f"The percent of Traditional Hotdogs sold is {traditional_percentage}.")
+print(f"The percent of Veggie Hotdogs sold is {veggie_percentage}.")
+print(f"The percent of Curry Hotdogs sold is {curry_percentage}.")
+print()
+print("Thanks for using the program John! Goodbye.")
 
 
 
