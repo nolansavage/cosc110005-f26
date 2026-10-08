@@ -110,6 +110,16 @@ while choice != 4:
     elif choice == 4:
         int(input("Tallying up the totals"))
 
+    # This will catch an error if a wrong number was typed in
+    else:
+        print("Please enter a valid option. Enter a number 1-4 only.")
+
+
+
+    # Calculating the totals
+print("----The Hotdog Tally")
+
+
 
 
 
