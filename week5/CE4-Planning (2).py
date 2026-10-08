@@ -66,7 +66,13 @@ traditional = 0
 curry = 0 
 veggie = 0
 
+# This is the choice variable
+choice = 0
 
+
+# Welcome message
+print('''Hello John! This program is designed to help you
+tally up the number of hotdogs sold for each type of hotdog''')
 
 
 
