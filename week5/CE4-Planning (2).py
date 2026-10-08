@@ -118,7 +118,6 @@ while choice != 4:
         print("Please enter a valid option. Enter a number 1-4 only.")
 
 
-
     # Calculating the totals
 print("--------- The Hotdog Tally ----------")
 print(f"The total amount of Traditional Hot Dogs sold is {traditional}.")
