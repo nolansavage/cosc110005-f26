@@ -118,12 +118,27 @@ while choice != 4:
         print("Please enter a valid option. Enter a number 1-4 only.")
 
 
-    # Calculating the totals
+# Calculating the totals
+#This will calculate the grand total of hotdogs sold
+hotdog_total = traditional + veggie + curry
+
 print("--------- The Hotdog Tally ----------")
 print(f"The total amount of Traditional Hot Dogs sold is {traditional}.")
 print(f"The total amount of Veggie Hotdogs sold is {veggie}.")
 print(f"The total amount of Curry Hotdogs sold is {curry}.")
+
+# This will calculate the grand total of hotdogs sold
 print(f"The COMPLETE total of all hotdogs sold is {traditional + veggie + curry}.")
+
+# Calculating the percentages of hotdogs sold
+if hotdog_total > 0:
+    traditional_percentage = traditional / hotdog_total * 100
+
+    veggie_percentage = veggie / hotdog_total * 100
+
+    curry_percentage = curry / hotdog_total * 100
+
+
 
 
 
