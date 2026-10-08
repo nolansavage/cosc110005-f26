@@ -97,6 +97,8 @@ while choice != 4:
     print("---- HOTDOG MENU ----")
 
 
+# ---------------------------------------- INPUT --------------------------------------------
+
     # This section is for option selection and inputs
     choice = int(input("Which option would you like to select 1-4?"))
 
@@ -120,9 +122,14 @@ while choice != 4:
         print("Please enter a valid option. Enter a number 1-4 only.")
 
 
+# -------------------------------------- PROCESS ------------------------------------------
+
 # Calculating the totals
 #This will calculate the grand total of hotdogs sold
 hotdog_total = traditional + veggie + curry
+
+
+# --------------------------------------- OUTPUT -----------------------------------------
 
 print("--------- The Hotdog Tally ----------")
 print(f"The total amount of Traditional Hot Dogs sold is {traditional}.")
@@ -150,7 +157,7 @@ print(f"The percent of Curry Hotdogs sold is {curry_percentage}.")
 print()
 print("Thanks for using the program John! Goodbye.")
 
-
+# --------------------------------------------------------------------------------------------
 
 
 
