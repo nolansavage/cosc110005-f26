@@ -1,4 +1,9 @@
-#Planning
+#Plan
+# The plan is to open the program by sending John a welcome message when opening the program.
+# The opening message will explain what John's options are.. John's options are 1-4, 1-3 being the
+# hotdog inputs so he can enter the number of hotdogs sold. The 4th option will let John tally up
+# the total amount of hot dogs sold so that he can see which hotdogs performed the best.Our program will
+# also loop whenever he chooses to input hotdog's until he chooses the fourth "tally" option.
 
 """
 OUTPUT: What will the program show?
