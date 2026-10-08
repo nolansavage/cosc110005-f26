@@ -99,13 +99,16 @@ while choice != 4:
     choice = ("Which option would you like to select 1-4?")
 
     if choice == 1:
-        int(input("How many Traditional Hotdogs were sold this week: "))
+        amount = int(input("How many Traditional Hotdogs were sold this week: "))
+        traditional += amount 
 
     elif choice == 2:
-        int(input("How many Veggie Hotdogs were sold this week: "))
+        amount = int(input("How many Veggie Hotdogs were sold this week: "))
+        veggie += amount
 
     elif choice == 3:
-        int(input("How many Curry Hotdogs were sold this week: "))
+        amount = int(input("How many Curry Hotdogs were sold this week: "))
+        curry += amount
 
     elif choice == 4:
         int(input("Tallying up the totals"))
@@ -117,8 +120,10 @@ while choice != 4:
 
 
     # Calculating the totals
-print("----The Hotdog Tally")
-
+print("--------- The Hotdog Tally ----------")
+print(f"The total amount of Traditional Hot Dogs sold is {traditional}.")
+print(f"The total amount of Veggie Hotdogs sold is {veggie}.")
+print(f"The total amount of Curry Hotdogs sold is {curry}.")
 
 
 
