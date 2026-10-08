@@ -60,3 +60,18 @@ repeat until the user enters 4 to exit
 Program will keep looping until John chooses 4
 """
 
+# These are the variables that will store the number of hotdogs sold.
+# The hot dog counter
+traditional = 0
+curry = 0 
+veggie = 0
+
+
+
+
+
+
+
+
+
+
