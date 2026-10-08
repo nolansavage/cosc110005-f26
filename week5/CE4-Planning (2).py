@@ -77,8 +77,10 @@ veggie = 0
 choice = 0
 
 # Welcome message
+print()
 print('''Hello John! This program is designed to help you
 tally up the number of hotdogs sold for each type of hotdog''')
+print()
 
 
 # This will tell the program that if the input IS NOT 4 then to keep looping inside of the while loop
@@ -111,7 +113,7 @@ while choice != 4:
         curry += amount
 
     elif choice == 4:
-        int(input("Tallying up the totals"))
+        print("Tallying up the totals")
 
     # This will catch an error if a wrong number was typed in
     else:
