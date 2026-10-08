@@ -123,6 +123,7 @@ print("--------- The Hotdog Tally ----------")
 print(f"The total amount of Traditional Hot Dogs sold is {traditional}.")
 print(f"The total amount of Veggie Hotdogs sold is {veggie}.")
 print(f"The total amount of Curry Hotdogs sold is {curry}.")
+print(f"The COMPLETE total of all hotdogs sold is {traditional + veggie + curry}.")
 
 
 
