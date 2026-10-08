@@ -85,6 +85,7 @@ tally up the number of hotdogs sold for each type of hotdog''')
 # until finished and ready to tally up the totals.
 while choice != 4:
 
+
     print("---- HOTDOG MENU ----")
     print("Please choose which hotdog you would like to edit number sold.")
     print("1. Traditional Hotdog")
@@ -92,6 +93,17 @@ while choice != 4:
     print("3. Curry Hotdog")
     print("4. Tally up the totals")
     print("---- HOTDOG MENU ----")
+
+    choice = ("Which option would you like to select 1-4?")
+
+    if choice == 1:
+        int(input("How many Traditional Hotdogs were sold this week: "))
+
+    elif choice == 2:
+        int(input("How many Veggie Hotdogs were sold this week: "))
+
+    elif choice == 3:
+        int(input("How many Curry Hotdogs were sold this week: "))
 
 
 
