@@ -33,13 +33,13 @@
 # 3.Curry hot dogs
 # 4.Tally option then Exit
 
-# John wont always hit these keys so we need to dela with the invalid input when there are too many customers.
+# John wont always hit these keys so we need to deal with the invalid input when there are too many customers.
 # """
 
 
 # """
 # Process: How will the program work? 
-# All the hot dogs sold will be set as 0 
+# All the hot dogs sold will be started out as 0 
 
 # Display menu 
 
@@ -88,6 +88,7 @@ print()
 while choice != 4:
 
     # This is the main Hotdog Menu
+    print()
     print("---- HOTDOG MENU ----")
     print("Please choose which hotdog you would like to edit number sold.")
     print("1. Traditional Hotdog")
@@ -95,6 +96,7 @@ while choice != 4:
     print("3. Curry Hotdog")
     print("4. Tally up the totals and then exit")
     print("---- HOTDOG MENU ----")
+    print()
 
 
 # ---------------------------------------- INPUT --------------------------------------------
@@ -135,6 +137,7 @@ print("--------- The Hotdog Tally ----------")
 print(f"The total amount of Traditional Hot Dogs sold is {traditional}.")
 print(f"The total amount of Veggie Hotdogs sold is {veggie}.")
 print(f"The total amount of Curry Hotdogs sold is {curry}.")
+print
 
 # This will calculate the grand total of hotdogs sold
 print(f"The COMPLETE total of all hotdogs sold is {traditional + veggie + curry}.")
@@ -157,7 +160,7 @@ print(f"The percent of Curry Hotdogs sold is {curry_percentage}.")
 print()
 print("Thanks for using the program John! Goodbye.")
 
-# --------------------------------------------------------------------------------------------
+# ---------------------------------- END OF PROGRAM -----------------------------------------------------
 
 
 
