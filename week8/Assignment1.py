@@ -33,7 +33,14 @@
 
 
 # --------------------------------- PROCESS -------------------------------------- #
-
+# In this section is where we will 
+# 1 - Validate if the bottom number is between 1 and 10000 and also check if its a whole number
+# 2 - Validate the top number to see if it is a whole number and between the bottom limit and the top limit
+# 3 - Repeat the question and input if the user enters in the wrong number they can try again
+# 4 - I will use loops to calculate square numbers by multiplying the whole numbers by itself
+# 5 - Also check if the calculated is within the specified limits
+# 6 - Finally we will show the user the square numbers that are within the range determined by the user
+# along with the square roots
 
 # --------------------------------- PROCESS -------------------------------------- #
 
@@ -47,5 +54,13 @@
 
 
 # --------------------------------- OUTPUT -------------------------------------- #
+# In this section I will
+# 1 - Display a nice header when the program starts 
+# 2 - Display an error message if invalid information is inputted
+# 3 - Show the user the number limits of 1 and 10000 that they can enter
+# 4 - Display all of the square numbers that are within the range that is determined by the user
+# 5 - Also show the user the corresponding square roots for each square number
+# 6 - And make the user hit a key to exit the program
+
 
 # --------------------------------- OUTPUT -------------------------------------- #
