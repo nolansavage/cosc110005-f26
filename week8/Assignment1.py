@@ -1,3 +1,4 @@
+
 # MAIN INFORMATION
 # Course: COSC 1100-05
 # Name: Assignment 1
@@ -31,10 +32,6 @@ print("===================================================")
 print("            Square Number Calculator")
 print("===================================================")
 
-# Asking the user for the top number and the bottom number between the limits.
-bottom_limit = input("Please enter the bottom limit number (1-10000): ")
-top_limit = input("Please enter in a top limit number (bottom limit-10000): ")
-
 # ------------------------------------------------------------------------------ #
 
 
@@ -56,92 +53,96 @@ try_again = "y"
 
 while try_again.lower() == "y":
 
+    # Asking the user for the top number and the bottom number between the limits.
+    bottom_limit = input("Please enter the bottom limit number (1-10000): ")
+    top_limit = input("Please enter in a top limit number (bottom limit-10000): ")
+
+    # Validating the bottom limit
+    while True:
+        try:
+            bottom_limit = int(bottom_limit)
+
+            if bottom_limit >= 1 and bottom_limit <= 10000:
+                break
+            else:
+                print("You must please enter a number that is between 1 and 10000")
+
+        except ValueError:
+            print("The number must be a whole number.")
+
+        bottom_limit = input("Please enter the bottom limit properly: ")
 
 
-# Validating the bottom limit
-while True:
-    try:
-        bottom_limit = int(bottom_limit)
+    # Validating the top limit
+    while True:
+        try:
+            top_limit = int(top_limit)
 
-        if bottom_limit >= 1 and bottom_limit <= 10000:
-            break
-        else:
-            print("You must please enter a number that is between 1 and 10000")
+            if top_limit >= bottom_limit and top_limit <= 10000:
+                break
+            else:
+                print("Please make sure your top number is between the bottom number and 10000.")
 
-    except ValueError:
-        print("The number must be a whole number.")
+        except ValueError:
+            print("The number has to be a whole number.")
 
-    bottom_limit = input("Please enter the bottom limit properly: ")
-
-
-# Validating the top limit
-while True:
-    try:
-        top_limit = int(top_limit)
-
-        if top_limit >= bottom_limit and top_limit <= 10000:
-            break
-        else:
-            print("Please make sure your top number is between the bottom number and 10000.")
-
-    except ValueError:
-        print("The number has to be a whole number.")
-
-    top_limit = input("Please enter the top limit properly: ")
+        top_limit = input("Please enter the top limit properly: ")
 
 
 
-# Calculating the sqaure number that are within the user's limits
-square_answers = []
+    # Calculating the sqaure number that are within the user's limits
+    square_answers = []
 
-for number in range(1, 101):
-    square_number = number ** 2
+    for number in range(1, 101):
+        square_number = number ** 2
 
-    if bottom_limit <= square_number <= top_limit:
-        square_answers.append((square_number, number))
+        if bottom_limit <= square_number <= top_limit:
+            square_answers.append((square_number, number))
+
+    # ------------------------------------------------------------------------------- #
+
+
+
+
+
+
+
+
+
+
+    # --------------------------------- OUTPUT -------------------------------------- #
+    # In this section I will
+    # 1 - Display a nice header when the program starts 
+    # 2 - Display an error message if invalid information is inputted
+    # 3 - Show the user the number limits of 1 and 10000 that they can enter
+    # 4 - Display all of the square numbers that are within the range that is determined by the user
+    # 5 - Also show the user the corresponding square roots for each square number
+    # 6 - And make the user hit a key to exit the program
+
+
+    # Displaying the square numbers and their square roots
+
+    print()
+    print("Here are the square numbers between", bottom_limit, "and", top_limit)
+    print("---------------------------------------------------------------------")
+
+    if len(square_answers) > 0:
+
+        for square_number, square_root in square_answers:
+            print("Square number:", square_number, "|=| Square root:", square_root)
+
+    else:
+        print("There are no valid square numbers within this range you entered...")
+
+
+    # Wait for the user to decide if they want to stay or go
+    # If the user enters "e" it will end the program
+    print()
+    try_again = input("Would you like to calculate another range? (Y/N): ")
+
+    while try_again.lower() != "y" and try_again.lower() != "n":
+        try_again = input("Please enter Y or N: ")
 
 # ------------------------------------------------------------------------------- #
 
-
-
-
-
-
-
-
-
-
-# --------------------------------- OUTPUT -------------------------------------- #
-# In this section I will
-# 1 - Display a nice header when the program starts 
-# 2 - Display an error message if invalid information is inputted
-# 3 - Show the user the number limits of 1 and 10000 that they can enter
-# 4 - Display all of the square numbers that are within the range that is determined by the user
-# 5 - Also show the user the corresponding square roots for each square number
-# 6 - And make the user hit a key to exit the program
-
-
-# Displaying the square numbers and their square roots
-
-print()
-print("Here are the square numbers between", bottom_limit, "and", top_limit)
-print("---------------------------------------------------------------------")
-
-if len(square_answers) > 0:
-
-    for square_number, square_root in square_answers:
-        print("Square number:", square_number, "|=| Square root:", square_root)
-
-else:
-    print("There are no valid square numbers within this range you entered...")
-
-
-# Wait for the user to decide if they want to stay or go
-# If the user enters "e" it will end the program
-print()
-exit_key = input("Press E to exit the program: ")
-
-while exit_key.lower() != "e":
-    exit_key = input("Please press e to exit: ")
-
-# ------------------------------------------------------------------------------- #
+print("Thank you for using the Square Number Calculator!")
