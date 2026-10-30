@@ -117,7 +117,7 @@ for number in range(1,101):
 # Displaying the square numbers and their square roots
 
 print()
-print("Here are the square numbers between" bottom_limit, "and", top_limit)
+print("Here are the square numbers between", bottom_limit, "and", top_limit)
 print("---------------------------------------------------------------------")
 
 if len(square_answers) > 0:
