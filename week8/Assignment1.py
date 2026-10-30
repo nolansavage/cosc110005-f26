@@ -82,6 +82,17 @@ while True:
 
     top_limit = input("Please enter the top limit properly: ")
 
+
+# Calculating the sqaure number that are within the user's limits
+
+square_answers = []
+
+for number in range(1,101):
+    square_number = number * number
+
+    if square_number >= bottom_limit and square_number <= top_limit:
+        square_answers.append((square_number, number))
+
 # ------------------------------------------------------------------------------- #
 
 
