@@ -128,4 +128,12 @@ if len(square_answers) > 0:
 else:
     print("There are no valid square numbers within this range you entered...")
 
+
+# Wait for the user to decide if they want to stay or go
+print()
+exit_key = input("Press E to exit the program: ")
+
+while exit_key.lower() != "e":
+    exit_key = input("Please press e to exit: ")
+
 # ------------------------------------------------------------------------------- #
