@@ -51,6 +51,22 @@ top_limit = input("Please enter in a top limit number (bottom limit-10000): ")
 # 6 - Finally we will show the user the square numbers that are within the range determined by the user
 # along with the square roots
 
+# Validating the bottom limit
+while True:
+    try:
+        bottom_limit = int(bottom_limit)
+
+        if bottom_limit >= 1 and bottom_limit <= 10000:
+            break
+        else:
+            print("You must please enter a number that is between 1 and 10000")
+
+    except ValueError:
+        print("The number must be a whole number.")
+
+    bottom_limit = input("Please enter the bottom limit properly: ")
+
+
 # ------------------------------------------------------------------------------- #
 
 
