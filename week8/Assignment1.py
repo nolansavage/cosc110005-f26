@@ -26,6 +26,15 @@
 # If the user does not enter a whole number or just an invalid entry, the user will be given an error
 # message and be told to re enter the appropriate and correct values.
 
+# Program Header
+print("===================================================")
+print("            Square Number Calculator")
+print("===================================================")
+
+# Asking the user for the top number and the bottom number between the limits.
+bottom_limit = input("Please enter the bottom limit number (1-10000): ")
+top_limit = input("Please enter in a top limit number (bottom limit-10000): ")
+
 # ------------------------------------------------------------------------------ #
 
 
