@@ -114,4 +114,18 @@ for number in range(1,101):
 # 6 - And make the user hit a key to exit the program
 
 
+# Displaying the square numbers and their square roots
+
+print()
+print("Here are the square numbers between" bottom_limit, "and", top_limit)
+print("---------------------------------------------------------------------")
+
+if len(square_answers) > 0:
+
+    for square_number, square_root in square_answers:
+        print("Square number:", square_number, "| Square root:", square_root)
+
+else:
+    print("There are no valid square numbers within this range you entered...")
+
 # ------------------------------------------------------------------------------- #
