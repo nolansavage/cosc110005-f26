@@ -15,6 +15,53 @@
 # and only then will the program will calculate and show the user the square numbers between the two limits
 # as well as their square roots.
 
+# --------------------------------- MY PSEUDOCODE --------------------------------- #
+#
+# START
+#
+# DISPLAY program title
+#
+# SET try_again to "y"
+#
+# WHILE try_again is "y":
+#
+#     ASK user for bottom limit
+#     ASK user for top limit
+#
+#     VALIDATE bottom limit:
+#         IF bottom limit is not a whole number:
+#             DISPLAY error message
+#             ASK again
+#         IF bottom limit is outside 1-10000:
+#             DISPLAY error message
+#             ASK again
+#
+#     VALIDATE top limit:
+#         IF top limit is not a whole number:
+#             DISPLAY error message
+#             ASK again
+#         IF top limit is less than bottom limit
+#         OR greater than 10000:
+#             DISPLAY error message
+#             ASK again
+#
+#     CREATE empty list for square answers
+#
+#     FOR each number from 1 to 100:
+#         CALCULATE its square
+#         IF square is between bottom and top limits:
+#             ADD square and its square root to the list
+#
+#     DISPLAY square numbers and their square roots
+#
+#     ASK user if they want to calculate another range
+#     VALIDATE answer is Y or N
+#
+# DISPLAY goodbye message
+#
+# END
+#
+
 # ----------------------------------------------------------------------------- #
 
 
@@ -33,9 +80,6 @@ print("            Square Number Calculator")
 print("===================================================")
 
 # ------------------------------------------------------------------------------ #
-
-
-
 
 
 # --------------------------------- PROCESS -------------------------------------- #
@@ -77,17 +121,17 @@ while try_again.lower() == "y":
     while True:
         try:
             top_limit = int(top_limit)
-
+            # Checking if the top limit is greater than the bottom limit
             if top_limit >= bottom_limit and top_limit <= 10000:
                 break
             else:
                 print("Please make sure your top number is between the bottom number and 10000.")
 
+        # Validation of Whole Number
         except ValueError:
             print("The number has to be a whole number.")
 
         top_limit = input("Please enter the top limit properly: ")
-
 
 
     # Calculating the sqaure number that are within the user's limits
@@ -100,15 +144,6 @@ while try_again.lower() == "y":
             square_answers.append((square_number, number))
 
     # ------------------------------------------------------------------------------- #
-
-
-
-
-
-
-
-
-
 
     # --------------------------------- OUTPUT -------------------------------------- #
     # In this section I will
@@ -145,4 +180,4 @@ while try_again.lower() == "y":
 
 # ------------------------------------------------------------------------------- #
 
-print("Thank you for using the Square Number Calculator! Have a great day!")
+print("Thank you for using the Square Number Calculator! Have a great day:)")
