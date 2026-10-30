@@ -67,6 +67,21 @@ while True:
     bottom_limit = input("Please enter the bottom limit properly: ")
 
 
+# Validating the top limit
+while True:
+    try:
+        top_limit = int(top_limit)
+
+        if top_limit >= bottom_limit and top_limit <= 10000:
+            break
+        else:
+            print("Please make sure your top number is between the bottom number and 10000.")
+
+    except ValueError:
+        print("The number has to be a whole number.")
+
+    top_limit = input("Please enter the top limit properly: ")
+
 # ------------------------------------------------------------------------------- #
 
 
