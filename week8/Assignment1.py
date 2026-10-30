@@ -51,6 +51,13 @@ top_limit = input("Please enter in a top limit number (bottom limit-10000): ")
 # 6 - Finally we will show the user the square numbers that are within the range determined by the user
 # along with the square roots
 
+# Asking the user if they want to use the calculator again
+try_again = "y"
+
+while try_again.lower() == "y":
+
+
+
 # Validating the bottom limit
 while True:
     try:
