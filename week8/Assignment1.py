@@ -1,4 +1,3 @@
-
 # MAIN INFORMATION
 # Course: COSC 1100-05
 # Name: Assignment 1
@@ -70,7 +69,7 @@
 # --------------------------------- INPUT -------------------------------------- #
 # The input will be the user entering in the bottom limit and the top limit.
 # The bottom limit is a whole number between 1 and 10000 and the top limit is a whole number that is
-# # greater than or equal to the bottom limit, is still a whole number and is also between the bottom limit and 10000
+# greater than or equal to the bottom limit, is still a whole number and is also between the bottom limit and 10000
 # If the user does not enter a whole number or just an invalid entry, the user will be given an error
 # message and be told to re enter the appropriate and correct values.
 
@@ -89,7 +88,7 @@ print("===================================================")
 # 3 - Repeat the question and input if the user enters in the wrong number they can try again
 # 4 - I will use loops to calculate square numbers by multiplying the whole numbers by itself
 # 5 - Also check if the calculated is within the specified limits
-# 6 - Finally we will show the user the square numbers that are within the range determined by the user
+# 6 - Finally we will show the user the square numbers that are within the range that is determined by the user
 # along with the square roots
 
 # Asking the user if they want to use the calculator again
@@ -152,13 +151,12 @@ while try_again.lower() == "y":
     # 3 - Show the user the number limits of 1 and 10000 that they can enter
     # 4 - Display all of the square numbers that are within the range that is determined by the user
     # 5 - Also show the user the corresponding square roots for each square number
-    # 6 - And make the user hit a key to exit the program
-
+    # 6 - Ask the user if they want to calculate another range or exit the program
 
     # Displaying the square numbers and their square roots
 
     print()
-    print("Here are the square numbers between", bottom_limit, "and", top_limit)
+    print("Square numbers between", bottom_limit, "and", top_limit)
     print("---------------------------------------------------------------------")
 
     if len(square_answers) > 0:
@@ -170,8 +168,7 @@ while try_again.lower() == "y":
         print("There are no valid square numbers within this range you entered...")
 
 
-    # Wait for the user to decide if they want to stay or go
-    # If the user enters "e" it will end the program
+    # Asking the user if they want to calculate another range
     print()
     try_again = input("Would you like to calculate another range? (Y/N): ")
 
