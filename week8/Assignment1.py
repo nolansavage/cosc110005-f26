@@ -83,14 +83,14 @@ while True:
     top_limit = input("Please enter the top limit properly: ")
 
 
-# Calculating the sqaure number that are within the user's limits
 
+# Calculating the sqaure number that are within the user's limits
 square_answers = []
 
-for number in range(1,101):
-    square_number = number * number
+for number in range(1, 101):
+    square_number = number ** 2
 
-    if square_number >= bottom_limit and square_number <= top_limit:
+    if bottom_limit <= square_number <= top_limit:
         square_answers.append((square_number, number))
 
 # ------------------------------------------------------------------------------- #
@@ -130,6 +130,7 @@ else:
 
 
 # Wait for the user to decide if they want to stay or go
+# If the user enters "e" it will end the program
 print()
 exit_key = input("Press E to exit the program: ")
 
