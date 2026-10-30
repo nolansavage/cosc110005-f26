@@ -42,7 +42,7 @@
 # 6 - Finally we will show the user the square numbers that are within the range determined by the user
 # along with the square roots
 
-# --------------------------------- PROCESS -------------------------------------- #
+# ------------------------------------------------------------------------------- #
 
 
 
@@ -63,4 +63,4 @@
 # 6 - And make the user hit a key to exit the program
 
 
-# --------------------------------- OUTPUT -------------------------------------- #
+# ------------------------------------------------------------------------------- #
