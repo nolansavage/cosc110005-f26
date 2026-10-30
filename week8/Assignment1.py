@@ -53,7 +53,7 @@
 #
 #     DISPLAY square numbers and their square roots
 #
-#     ASK user if they want to calculate another range
+#     ASK the user if they want to calculate another range
 #     VALIDATE answer is Y or N
 #
 # DISPLAY goodbye message
