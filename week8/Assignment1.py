@@ -123,7 +123,7 @@ print("---------------------------------------------------------------------")
 if len(square_answers) > 0:
 
     for square_number, square_root in square_answers:
-        print("Square number:", square_number, "| Square root:", square_root)
+        print("Square number:", square_number, "|=| Square root:", square_root)
 
 else:
     print("There are no valid square numbers within this range you entered...")
