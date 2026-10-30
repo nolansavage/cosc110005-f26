@@ -70,7 +70,7 @@
 # --------------------------------- INPUT -------------------------------------- #
 # The input will be the user entering in the bottom limit and the top limit.
 # The bottom limit is a whole number between 1 and 10000 and the top limit is a whole number that is
-# greater than the bottom limit, is still a whole number and is also between the bottom limit and 10000
+# # greater than or equal to the bottom limit, is still a whole number and is also between the bottom limit and 10000
 # If the user does not enter a whole number or just an invalid entry, the user will be given an error
 # message and be told to re enter the appropriate and correct values.
 
