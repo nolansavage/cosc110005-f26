@@ -145,4 +145,4 @@ while try_again.lower() == "y":
 
 # ------------------------------------------------------------------------------- #
 
-print("Thank you for using the Square Number Calculator!")
+print("Thank you for using the Square Number Calculator! Have a great day!")
