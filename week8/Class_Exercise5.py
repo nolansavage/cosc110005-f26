@@ -60,14 +60,89 @@ print("However, your input must be Valid. In order for the input to be valid, th
 print("Numerical, cannot be a negative number and can also not exceed the maximum number for that assesment.")
 
 # In-Class Exercises (5 total)
-print("We will start by entering the user's In-Class Assignment Marks.")
+valid_mark = False
 
-in_class_exercise_1 = float(input("Please enter the Planning an Application mark: "))
-in_class_exercise_2 = float(input("Please enter the Numeric and String Data mark: "))
-in_class_exercise_3 = float(input("Please enter the Selection mark: "))
-in_class_exercise_4 = float(input("Please enter the Iteration mark: "))
-in_class_exercise_5 = float(input("Please enter the Arrays mark: "))
+while valid_mark == False:
+    try:
+        in_class_exercise_1 = float(input("Please enter the Planning an Application mark: "))
 
+        if in_class_exercise_1 < 0:
+            print("Your mark cannot be negative.")
+        elif in_class_exercise_1 > 100:
+            print("Your mark cannot exceed 100.")
+        else:
+            valid_mark = True
+
+    except ValueError:
+        print("Please enter a numerical value.")
+
+
+valid_mark = False
+
+while valid_mark == False:
+    try:
+        in_class_exercise_2 = float(input("Please enter the Numeric and String Data mark: "))
+
+        if in_class_exercise_2 < 0:
+            print("Your mark cannot be negative.")
+        elif in_class_exercise_2 > 100:
+            print("Your mark cannot exceed 100.")
+        else:
+            valid_mark = True
+
+    except ValueError:
+        print("Please enter a numerical value.")
+
+
+valid_mark = False
+
+while valid_mark == False:
+    try:
+        in_class_exercise_3 = float(input("Please enter the Selection mark: "))
+
+        if in_class_exercise_3 < 0:
+            print("Your mark cannot be negative.")
+        elif in_class_exercise_3 > 100:
+            print("Your mark cannot exceed 100.")
+        else:
+            valid_mark = True
+
+    except ValueError:
+        print("Please enter a numerical value.")
+
+
+valid_mark = False
+
+while valid_mark == False:
+    try:
+        in_class_exercise_4 = float(input("Please enter the Iteration mark: "))
+
+        if in_class_exercise_4 < 0:
+            print("Your mark cannot be negative.")
+        elif in_class_exercise_4 > 100:
+            print("Your mark cannot exceed 100.")
+        else:
+            valid_mark = True
+
+    except ValueError:
+        print("Please enter a numerical value.")
+
+
+valid_mark = False
+
+while valid_mark == False:
+    try:
+        in_class_exercise_5 = float(input("Please enter the Arrays mark: "))
+
+        if in_class_exercise_5 < 0:
+            print("Your mark cannot be negative.")
+        elif in_class_exercise_5 > 100:
+            print("Your mark cannot exceed 100.")
+        else:
+            valid_mark = True
+
+    except ValueError:
+        print("Please enter a numerical value.")
 # In-Class Exercise List
 in_class_exercise_list = [in_class_exercise_1, in_class_exercise_2, in_class_exercise_3, in_class_exercise_4, in_class_exercise_5]
 
