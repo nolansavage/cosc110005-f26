@@ -62,11 +62,11 @@ print("Numerical, cannot be a negative number and can also not exceed the maximu
 # In-Class Exercises (5 total)
 print("We will start by entering the user's In-Class Assignment Marks.")
 
-in_class_exercise_1 = float(input("Please enter the In-Class Exercise 1 mark: "))
-in_class_exercise_2 = float(input("Please enter the In-Class Exercise 2 mark: "))
-in_class_exercise_3 = float(input("Please enter the In-Class Exercise 3 mark: "))
-in_class_exercise_4 = float(input("Please enter the In-Class Exercise 4 mark: "))
-in_class_exercise_5 = float(input("Please enter the In-Class Exercise 5 mark: "))
+in_class_exercise_1 = float(input("Please enter the Planning an Application mark: "))
+in_class_exercise_2 = float(input("Please enter the Numeric and String Data mark: "))
+in_class_exercise_3 = float(input("Please enter the Selection mark: "))
+in_class_exercise_4 = float(input("Please enter the Iteration mark: "))
+in_class_exercise_5 = float(input("Please enter the Arrays mark: "))
 
 # In-Class Exercise List
 in_class_exercise_list = [in_class_exercise_1, in_class_exercise_2, in_class_exercise_3, in_class_exercise_4, in_class_exercise_5]
@@ -74,9 +74,9 @@ in_class_exercise_list = [in_class_exercise_1, in_class_exercise_2, in_class_exe
 
 
 # Class Assignment (1 total)
-print("Now please enter your Assignment 1 mark.")
+print("Now please enter your Assignment 1: Iteration mark.")
 
-assignment_1 = float(input("Please enter your Assignment 1 mark: "))
+assignment_1 = float(input("Please enter your Assignment 1: Iteration mark: "))
 
 # Assignment 1 List
 assignment_1_list = [assignment_1]
@@ -106,7 +106,6 @@ assignment_1_total = sum(assignment_1_list)
 test_1_total = sum(test_list)
 
 
-
 # Calculating the percentages
 in_class_exercise_percentage = in_class_exercise_total / 5
 
@@ -115,8 +114,7 @@ assignment_1_percentage = assignment_1_total
 test_1_percentage = test_1_total / 2
 
 
-# Calculating the weighted midterm grade
-total_midterm_grade = (in_class_exercise_percentage * 0.25) + (assignment_1_percentage * 0.08) + (test_1_percentage * 0.16)
+total_midterm_grade = ((in_class_exercise_percentage * 0.25) + (assignment_1_percentage * 0.08) + (test_1_percentage * 0.16)) / 49 * 100
 
 # ----------------------------------------------------------------------------------
 
