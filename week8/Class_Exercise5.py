@@ -37,6 +37,15 @@
 # There has only been one test so far but there was a practical and a theory portion of it. Therefore, the
 # last list will have 2 elements.
 
+# I will need to take all the inputs and validate them to see if they make sense, and then convert them into
+# a percentage.
+
+
+# VALIDATION RULES
+# 1 - The input must be numerical.
+# 2 -The mark cannot be negative.
+# 3 - The mark cannot exceed the maximum possible mark for that assessment.
+
 # -------------------------------------------------------------------------------
 
 
