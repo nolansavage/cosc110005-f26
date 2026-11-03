@@ -26,17 +26,16 @@
 
 # --------------------------------------- MY PLAN ----------------------------------------
 # I know that I will need to have 3 seperate lists for the user to enter marks into. One that is
-# Pre-Class Activities, another that is Class Exercises and the last one is the first test.
+# In-Class Assignments, another that is Assignments and the last one is the first test.
 # I will have to request the user to enter their marks in for the appropriate sections. Which means 
 # I will need to tell the user what section they are entering information in for. 
 
-# There are 5 preparatory quizzes so that means the first list "Pre-Class Activities" will have 5 elements
+# There are 5 In-Class Assignments, so that means the first list "In-Class Assignments" will have 5 elements
 
-# There are currently 5 Class Exercises including this one. There will be 5 elements in the second list.
+# There is only 1 Assignment. There will be 1 element in the second list.
 
 # There has only been one test so far but there was a practical and a theory portion of it. Therefore, the
 # last list will have 2 elements.
-
 
 # -------------------------------------------------------------------------------
 
@@ -44,31 +43,33 @@
 
 # -------------------------------- INPUT -----------------------------------------
 
-# I am going to collect the values for each list. Starting with pre-class activities.
+# I am going to collect the values for each list. Starting with In-Class Exercises.
 
 # Program Introduction
 print()
 print("Hello! In this program I will be calculating a midterm mark based on your inputs.")
 
 # Pre Class Activities List (5 total)
-print("We will start by entering the user's Preparatory Quiz Marks.")
+print("We will start by entering the user's In-Class Assignment Marks.")
 
-preparatory_quiz_1 = input("Please enter the Preparatory Quiz 1 mark: ")
-preparatory_quiz_2 = input("Please enter the Preparatory Quiz 2 mark: ")
-preparatory_quiz_3 = input("Please enter the Preparatory Quiz 3 mark: ")
-preparatory_quiz_4 = input("Please enter the Preparatory Quiz 4 mark: ")
-preparatory_quiz_5 = input("Please enter the Preparatory Quiz 5 mark: ")
+in_class_exercise_1 = input("Please enter the In-Class Exercise 1 mark: ")
+in_class_exercise_2 = input("Please enter the In-Class Exercise 2 mark: ")
+in_class_exercise_3 = input("Please enter the In-Class Exercise 3 mark: ")
+in_class_exercise_4 = input("Please enter the In-Class Exercise 4 mark: ")
+in_class_exercise_5 = input("Please enter the In-Class Exercise 5 mark: ")
 
-preparatory_quiz_list = [preparatory_quiz_1, preparatory_quiz_2, preparatory_quiz_3, preparatory_quiz_4, preparatory_quiz_5]
+# In-Class Exercise List
+in_class_assignemnt_list = [in_class_exercise_1, in_class_exercise_2, in_class_exercise_3, in_class_exercise_4, in_class_exercise_5]
 
-# Class Exercises List (5 total)
-print("Now please enter your In-Class Exercise marks.")
 
-in_class_exercise_1 = input("Please enter your In-Class Exercise 1 mark: ")
-in_class_exercise_2 = input("Please enter your In-Class Exercise 2 mark: ")
-in_class_exercise_3 = input("Please enter your In-Class Exercise 3 mark: ")
-in_class_exercise_4 = input("Please enter your In-Class Exercise 4 mark: ")
-in_class_exercise_5 = input("Please enter your In-Class Exercise 5 mark: ")
+
+# Class Assignment List (1 total)
+print("Now please enter your Assignment 1 mark.")
+
+Assignment_1 = input("Please enter your Assignment 1 mark: ")
+
+# Assignment 1 List
+Assignment_1_list = [Assignment_1]
 
 
 
@@ -78,6 +79,10 @@ print("Now please enter your Midterm test grades.")
 test_theory = input("Please enter your mark for test one Theory: ")
 test_practical = input("Please enter your mark for test one Practical: ")
 
+# Test List
+
+test_list = [test_theory, test_practical]
+
 
 # --------------------------------------------------------------------------------
 
@@ -85,9 +90,14 @@ test_practical = input("Please enter your mark for test one Practical: ")
 
 # Getting the percentages of each list
 
+# Preparatory Quiz Percentage
 preparatory_quiz_list_percentage = preparatory_quiz_list / 5 * 100
 
 print(f"Your percentage for the preparatory quizzes is %{preparatory_quiz_list_percentage}.")
+
+
+# In-Class Exercise Percentage
+
 
 
 # ----------------------------------------------------------------------------------
