@@ -59,22 +59,35 @@ preparatory_quiz_3 = input("Please enter the Preparatory Quiz 3 mark: ")
 preparatory_quiz_4 = input("Please enter the Preparatory Quiz 4 mark: ")
 preparatory_quiz_5 = input("Please enter the Preparatory Quiz 5 mark: ")
 
+preparatory_quiz_list = [preparatory_quiz_1, preparatory_quiz_2, preparatory_quiz_3, preparatory_quiz_4, preparatory_quiz_5]
 
 # Class Exercises List (5 total)
 print("Now please enter your In-Class Exercise marks.")
 
 in_class_exercise_1 = input("Please enter your In-Class Exercise 1 mark: ")
 in_class_exercise_2 = input("Please enter your In-Class Exercise 2 mark: ")
-in_class_exercise_1 = input("Please enter your In-Class Exercise 1 mark: ")
-in_class_exercise_1 = input("Please enter your In-Class Exercise 1 mark: ")
-in_class_exercise_1 = input("Please enter your In-Class Exercise 1 mark: ")
+in_class_exercise_3 = input("Please enter your In-Class Exercise 3 mark: ")
+in_class_exercise_4 = input("Please enter your In-Class Exercise 4 mark: ")
+in_class_exercise_5 = input("Please enter your In-Class Exercise 5 mark: ")
+
+
+
+# Test Grades (2 total, Practical and Theory)
+print("Now please enter your Midterm test grades.")
+
+test_theory = input("Please enter your mark for test one Theory: ")
+test_practical = input("Please enter your mark for test one Practical: ")
 
 
 # --------------------------------------------------------------------------------
 
 # ------------------------------------- PROCESS ------------------------------------
 
+# Getting the percentages of each list
 
+preparatory_quiz_list_percentage = preparatory_quiz_list / 5 * 100
+
+print(f"Your percentage for the preparatory quizzes is %{preparatory_quiz_list_percentage}.")
 
 
 # ----------------------------------------------------------------------------------
@@ -82,6 +95,7 @@ in_class_exercise_1 = input("Please enter your In-Class Exercise 1 mark: ")
 
 # ---------------------------------- OUTPUT ------------------------------------------
 
+# Showing the user their percentage for each three sections and then a total percentage
 
 
 
