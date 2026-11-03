@@ -91,8 +91,8 @@ test_theory = input("Please enter your mark for test one Theory: ")
 test_practical = input("Please enter your mark for test one Practical: ")
 
 # Test List
-
 test_list = [test_theory, test_practical]
+
 
 
 # --------------------------------------------------------------------------------
@@ -103,24 +103,15 @@ test_list = [test_theory, test_practical]
 
 # In-Class Exercise Percentage
 in_class_exercise_percentage = in_class_exercise_list / 5 * 100
-print(f"Your percentage for the in class exercises is %{in_class_exercise_percentage}.")
-
 
 # Assignments Percentage
 assignment_1_percentage = assignment_1_list / 1 * 100
-print(f"Your percentage for the assignments is %{assignment_1_percentage}.")
-
 
 # Test Percentage
 test_1_percentage = test_list / 2 * 100
-print(f"Your percentage for the tests is %{test_1_percentage}.")
-
 
 # Total Grade
 total_midterm_grade = in_class_exercise_percentage + assignment_1_percentage + test_1_percentage / 3 * 100
-print(f"Your total Midterm Grade is %{total_midterm_grade}. Good Job!")
-
-
 
 # ----------------------------------------------------------------------------------
 
@@ -129,8 +120,10 @@ print(f"Your total Midterm Grade is %{total_midterm_grade}. Good Job!")
 
 # Showing the user their percentage for each three sections and then a total percentage
 
-
-
+print(f"Your percentage for the in class exercises is %{in_class_exercise_percentage}.")
+print(f"Your percentage for the assignments is %{assignment_1_percentage}.")
+print(f"Your percentage for the tests is %{test_1_percentage}.")
+print(f"Your total Midterm Grade is %{total_midterm_grade}. Good Job! Or maybe not and that's fine too!")
 
 
 
