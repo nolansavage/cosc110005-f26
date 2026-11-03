@@ -23,7 +23,6 @@
 
 
 
-
 # --------------------------------------- MY PLAN ----------------------------------------
 # I know that I will need to have 3 seperate lists for the user to enter marks into. One that is
 # In-Class Assignments, another that is Assignments and the last one is the first test.
@@ -63,11 +62,11 @@ print("Numerical, cannot be a negative number and can also not exceed the maximu
 # In-Class Exercises (5 total)
 print("We will start by entering the user's In-Class Assignment Marks.")
 
-in_class_exercise_1 = input("Please enter the In-Class Exercise 1 mark: ")
-in_class_exercise_2 = input("Please enter the In-Class Exercise 2 mark: ")
-in_class_exercise_3 = input("Please enter the In-Class Exercise 3 mark: ")
-in_class_exercise_4 = input("Please enter the In-Class Exercise 4 mark: ")
-in_class_exercise_5 = input("Please enter the In-Class Exercise 5 mark: ")
+in_class_exercise_1 = float(input("Please enter the In-Class Exercise 1 mark: "))
+in_class_exercise_2 = float(input("Please enter the In-Class Exercise 2 mark: "))
+in_class_exercise_3 = float(input("Please enter the In-Class Exercise 3 mark: "))
+in_class_exercise_4 = float(input("Please enter the In-Class Exercise 4 mark: "))
+in_class_exercise_5 = float(input("Please enter the In-Class Exercise 5 mark: "))
 
 # In-Class Exercise List
 in_class_exercise_list = [in_class_exercise_1, in_class_exercise_2, in_class_exercise_3, in_class_exercise_4, in_class_exercise_5]
@@ -77,7 +76,7 @@ in_class_exercise_list = [in_class_exercise_1, in_class_exercise_2, in_class_exe
 # Class Assignment (1 total)
 print("Now please enter your Assignment 1 mark.")
 
-assignment_1 = input("Please enter your Assignment 1 mark: ")
+assignment_1 = float(input("Please enter your Assignment 1 mark: "))
 
 # Assignment 1 List
 assignment_1_list = [assignment_1]
@@ -87,8 +86,8 @@ assignment_1_list = [assignment_1]
 # Test marks (2 total, Practical and Theory)
 print("Now please enter your Midterm test grades.")
 
-test_theory = input("Please enter your mark for test one Theory: ")
-test_practical = input("Please enter your mark for test one Practical: ")
+test_theory = float(input("Please enter your mark for test one Theory: "))
+test_practical = float(input("Please enter your mark for test one Practical: "))
 
 # Test List
 test_list = [test_theory, test_practical]
@@ -100,16 +99,24 @@ test_list = [test_theory, test_practical]
 # ------------------------------------- PROCESS ------------------------------------
 
 # Getting the totals of each list
-
-# Getting the totals of each list
 in_class_exercise_total = sum(in_class_exercise_list)
 
 assignment_1_total = sum(assignment_1_list)
 
 test_1_total = sum(test_list)
 
-# Total Grade
 
+
+# Calculating the percentages
+in_class_exercise_percentage = in_class_exercise_total / 5
+
+assignment_1_percentage = assignment_1_total
+
+test_1_percentage = test_1_total / 2
+
+
+# Calculating the weighted midterm grade
+total_midterm_grade = (in_class_exercise_percentage * 0.25) + (assignment_1_percentage * 0.08) + (test_1_percentage * 0.16)
 
 # ----------------------------------------------------------------------------------
 
