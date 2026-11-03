@@ -49,6 +49,8 @@
 # Program Introduction
 print()
 print("Hello! In this program I will be calculating a midterm mark based on your inputs.")
+
+# Pre Class Activities List (5 total)
 print("We will start by entering the user's Preparatory Quiz Marks.")
 
 preparatory_quiz_1 = input("Please enter the Preparatory Quiz 1 mark: ")
@@ -56,6 +58,17 @@ preparatory_quiz_2 = input("Please enter the Preparatory Quiz 2 mark: ")
 preparatory_quiz_3 = input("Please enter the Preparatory Quiz 3 mark: ")
 preparatory_quiz_4 = input("Please enter the Preparatory Quiz 4 mark: ")
 preparatory_quiz_5 = input("Please enter the Preparatory Quiz 5 mark: ")
+
+
+# Class Exercises List (5 total)
+print("Now please enter your In-Class Exercise marks.")
+
+in_class_exercise_1 = input("Please enter your In-Class Exercise 1 mark: ")
+in_class_exercise_2 = input("Please enter your In-Class Exercise 2 mark: ")
+in_class_exercise_1 = input("Please enter your In-Class Exercise 1 mark: ")
+in_class_exercise_1 = input("Please enter your In-Class Exercise 1 mark: ")
+in_class_exercise_1 = input("Please enter your In-Class Exercise 1 mark: ")
+
 
 # --------------------------------------------------------------------------------
 
