@@ -249,5 +249,5 @@ print("-------------------------------------------------------------------------
 print(f"Your percentage for the in class exercises is {in_class_exercise_percentage:.2f}%.")
 print(f"Your percentage for the assignments is {assignment_1_percentage:.2f}%.")
 print(f"Your percentage for the tests is {test_1_percentage:.2f}%.")
-print(f"Your total Midterm Grade is {total_midterm_grade:.2f}%. Good Job! Or maybe not and that's fine too!")
+print(f"Your total Midterm Grade is {total_midterm_grade:.2f}%. Good Job! Or maybe not, and that's fine too!")
 print("---------------------------------------------------------------------------------------------------")
