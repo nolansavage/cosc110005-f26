@@ -49,7 +49,7 @@
 print()
 print("Hello! In this program I will be calculating a midterm mark based on your inputs.")
 
-# Pre Class Activities List (5 total)
+# In-Class Exercises (5 total)
 print("We will start by entering the user's In-Class Assignment Marks.")
 
 in_class_exercise_1 = input("Please enter the In-Class Exercise 1 mark: ")
@@ -59,21 +59,21 @@ in_class_exercise_4 = input("Please enter the In-Class Exercise 4 mark: ")
 in_class_exercise_5 = input("Please enter the In-Class Exercise 5 mark: ")
 
 # In-Class Exercise List
-in_class_assignemnt_list = [in_class_exercise_1, in_class_exercise_2, in_class_exercise_3, in_class_exercise_4, in_class_exercise_5]
+in_class_exercise_list = [in_class_exercise_1, in_class_exercise_2, in_class_exercise_3, in_class_exercise_4, in_class_exercise_5]
 
 
 
-# Class Assignment List (1 total)
+# Class Assignment (1 total)
 print("Now please enter your Assignment 1 mark.")
 
-Assignment_1 = input("Please enter your Assignment 1 mark: ")
+assignment_1 = input("Please enter your Assignment 1 mark: ")
 
 # Assignment 1 List
-Assignment_1_list = [Assignment_1]
+assignment_1_list = [assignment_1]
 
 
 
-# Test Grades (2 total, Practical and Theory)
+# Test marks (2 total, Practical and Theory)
 print("Now please enter your Midterm test grades.")
 
 test_theory = input("Please enter your mark for test one Theory: ")
@@ -90,13 +90,24 @@ test_list = [test_theory, test_practical]
 
 # Getting the percentages of each list
 
-# Preparatory Quiz Percentage
-preparatory_quiz_list_percentage = preparatory_quiz_list / 5 * 100
-
-print(f"Your percentage for the preparatory quizzes is %{preparatory_quiz_list_percentage}.")
-
-
 # In-Class Exercise Percentage
+in_class_exercise_percentage = in_class_exercise_list / 5 * 100
+print(f"Your percentage for the in class exercises is %{in_class_exercise_percentage}.")
+
+
+# Assignments Percentage
+assignment_1_percentage = assignment_1_list / 1 * 100
+print(f"Your percentage for the assignments is %{assignment_1_percentage}.")
+
+
+# Test Percentage
+test_1_percentage = test_list / 2 * 100
+print(f"Your percentage for the tests is %{test_1_percentage}.")
+
+
+# Total Grade
+total_midterm_grade = in_class_exercise_percentage + assignment_1_percentage + test_1_percentage / 3 * 100
+print(f"Your total Midterm Grade is %{total_midterm_grade}. Good Job!")
 
 
 
