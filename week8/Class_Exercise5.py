@@ -143,6 +143,7 @@ while valid_mark == False:
 
     except ValueError:
         print("Please enter a numerical value.")
+
 # In-Class Exercise List
 in_class_exercise_list = [in_class_exercise_1, in_class_exercise_2, in_class_exercise_3, in_class_exercise_4, in_class_exercise_5]
 
@@ -151,7 +152,21 @@ in_class_exercise_list = [in_class_exercise_1, in_class_exercise_2, in_class_exe
 # Class Assignment (1 total)
 print("Now please enter your Assignment 1: Iteration mark.")
 
-assignment_1 = float(input("Please enter your Assignment 1: Iteration mark: "))
+valid_mark = False
+
+while valid_mark == False:
+    try:
+        assignment_1 = float(input("Please enter your Assignment 1: Iteration mark: "))
+
+        if assignment_1 < 0:
+            print("Your mark cannot be negative.")
+        elif assignment_1 > 100:
+            print("Your mark cannot exceed 100.")
+        else:
+            valid_mark = True
+
+    except ValueError:
+        print("Please enter a numerical value.")
 
 # Assignment 1 List
 assignment_1_list = [assignment_1]
@@ -161,8 +176,41 @@ assignment_1_list = [assignment_1]
 # Test marks (2 total, Practical and Theory)
 print("Now please enter your Midterm test grades.")
 
-test_theory = float(input("Please enter your mark for test one Theory: "))
-test_practical = float(input("Please enter your mark for test one Practical: "))
+
+# Test Theory
+valid_mark = False
+
+while valid_mark == False:
+    try:
+        test_theory = float(input("Please enter your mark for test one Theory: "))
+
+        if test_theory < 0:
+            print("Your mark cannot be negative.")
+        elif test_theory > 100:
+            print("Your mark cannot exceed 100.")
+        else:
+            valid_mark = True
+
+    except ValueError:
+        print("Please enter a numerical value.")
+
+
+# Test Practical
+valid_mark = False
+
+while valid_mark == False:
+    try:
+        test_practical = float(input("Please enter your mark for test one Practical: "))
+
+        if test_practical < 0:
+            print("Your mark cannot be negative.")
+        elif test_practical > 100:
+            print("Your mark cannot exceed 100.")
+        else:
+            valid_mark = True
+
+    except ValueError:
+        print("Please enter a numerical value.")
 
 # Test List
 test_list = [test_theory, test_practical]
