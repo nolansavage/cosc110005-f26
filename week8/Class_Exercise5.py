@@ -43,7 +43,7 @@
 
 # VALIDATION RULES
 # 1 - The input must be numerical.
-# 2 -The mark cannot be negative.
+# 2 - The mark cannot be negative.
 # 3 - The mark cannot exceed the maximum possible mark for that assessment.
 
 # -------------------------------------------------------------------------------
@@ -57,6 +57,8 @@
 # Program Introduction
 print()
 print("Hello! In this program I will be calculating a midterm mark based on your inputs.")
+print("However, your input must be Valid. In order for the input to be valid, the inputs must be;")
+print("Numerical, cannot be a negative number and can also not exceed the maximum number for that assesment.")
 
 # In-Class Exercises (5 total)
 print("We will start by entering the user's In-Class Assignment Marks.")
