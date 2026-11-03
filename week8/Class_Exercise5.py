@@ -73,7 +73,7 @@ while valid_mark == False:
             valid_mark = True
 
     except ValueError:
-        print("Please enter a numerical value.")
+        print("Please enter a whole number.")
 
 
 valid_mark = False
@@ -90,7 +90,7 @@ while valid_mark == False:
             valid_mark = True
 
     except ValueError:
-        print("Please enter a numerical value.")
+        print("Please enter a whole number.")
 
 
 valid_mark = False
@@ -107,7 +107,7 @@ while valid_mark == False:
             valid_mark = True
 
     except ValueError:
-        print("Please enter a numerical value.")
+        print("Please enter a whole number.")
 
 
 valid_mark = False
@@ -124,7 +124,7 @@ while valid_mark == False:
             valid_mark = True
 
     except ValueError:
-        print("Please enter a numerical value.")
+        print("Please enter a whole number.")
 
 
 valid_mark = False
@@ -141,7 +141,7 @@ while valid_mark == False:
             valid_mark = True
 
     except ValueError:
-        print("Please enter a numerical value.")
+        print("Please enter a whole number.")
 
 # In-Class Exercise List
 in_class_exercise_list = [in_class_exercise_1, in_class_exercise_2, in_class_exercise_3, in_class_exercise_4, in_class_exercise_5]
@@ -165,7 +165,7 @@ while valid_mark == False:
             valid_mark = True
 
     except ValueError:
-        print("Please enter a numerical value.")
+        print("Please enter a whole number.")
 
 # Assignment 1 List
 assignment_1_list = [assignment_1]
@@ -191,7 +191,7 @@ while valid_mark == False:
             valid_mark = True
 
     except ValueError:
-        print("Please enter a numerical value.")
+        print("Please enter a whole number.")
 
 
 # Test Practical
@@ -209,7 +209,7 @@ while valid_mark == False:
             valid_mark = True
 
     except ValueError:
-        print("Please enter a numerical value.")
+        print("Please enter a whole number")
 
 # Test List
 test_list = [test_theory, test_practical]
