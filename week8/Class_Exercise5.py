@@ -99,19 +99,17 @@ test_list = [test_theory, test_practical]
 
 # ------------------------------------- PROCESS ------------------------------------
 
-# Getting the percentages of each list
+# Getting the totals of each list
 
-# In-Class Exercise Percentage
-in_class_exercise_percentage = in_class_exercise_list / 5 * 100
+# Getting the totals of each list
+in_class_exercise_total = sum(in_class_exercise_list)
 
-# Assignments Percentage
-assignment_1_percentage = assignment_1_list / 1 * 100
+assignment_1_total = sum(assignment_1_list)
 
-# Test Percentage
-test_1_percentage = test_list / 2 * 100
+test_1_total = sum(test_list)
 
 # Total Grade
-total_midterm_grade = in_class_exercise_percentage + assignment_1_percentage + test_1_percentage / 3 * 100
+
 
 # ----------------------------------------------------------------------------------
 
@@ -124,19 +122,3 @@ print(f"Your percentage for the in class exercises is %{in_class_exercise_percen
 print(f"Your percentage for the assignments is %{assignment_1_percentage}.")
 print(f"Your percentage for the tests is %{test_1_percentage}.")
 print(f"Your total Midterm Grade is %{total_midterm_grade}. Good Job! Or maybe not and that's fine too!")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
