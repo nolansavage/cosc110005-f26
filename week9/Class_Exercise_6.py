@@ -16,21 +16,9 @@
 
 
 # --------------------------------------- MY PLAN ----------------------------------------
-# I know that I will need to have 3 seperate lists for the user to enter marks into. One that is
-# In-Class Assignments, another that is Assignments and the last one is the first test.
-# I will have to request the user to enter their marks in for the appropriate sections. Which means 
-# I will need to tell the user what section they are entering information in for. 
-
-# There are 5 In-Class Assignments, so that means the first list "In-Class Assignments" will have 5 elements
-
-# There is only 1 Assignment. There will be 1 element in the second list.
-
-# There has only been one test so far but there was a practical and a theory portion of it. Therefore, the
-# last list will have 2 elements.
-
-# I will need to take all the inputs and validate them to see if they make sense, and then convert them into
-# a percentage.
-
+# I know that I will need to create new functions to get rid of the redundancies in my code. I will do that
+# by adding new functions for validations and lists. For my mental visual on this I will create a NEW
+# section called "Functions"
 
 # VALIDATION RULES
 # 1 - The input must be numerical.
