@@ -28,6 +28,38 @@
 # --------------------------------------------------------------------------------------
 
 
+# ---------------------------------------- Functions ------------------------------------------
+
+# Function #1 - Getting Valid Grade
+def getting_valid_grade(assignment_name):
+
+    valid_mark = False
+
+    while valid_mark == False:
+        try:
+            mark = float(input(f"Please enter your {assignment_name} mark: "))
+
+            if mark < 0:
+                print("Your mark cannot be negative.")
+
+            elif mark > 100:
+                print("Your mark cannot exceed 100.")
+
+            else:
+                valid_mark = True
+
+        except ValueError:
+            print("Please enter a valid numerical mark.")
+
+    return mark
+
+
+
+
+# ------------------------------------------------------------------------------------------
+
+
+
 
 # -------------------------------- INPUT -----------------------------------------------
 
