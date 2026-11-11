@@ -74,87 +74,17 @@ print("Numerical, cannot be a negative number and can also not exceed the maximu
 # In-Class Exercises (5 total)
 valid_mark = False
 
-while valid_mark == False:
-    try:
-        in_class_exercise_1 = float(input("Please enter the Planning an Application mark: "))
+# In-Class Exercises (5 total)
 
-        if in_class_exercise_1 < 0:
-            print("Your mark cannot be negative.")
-        elif in_class_exercise_1 > 100:
-            print("Your mark cannot exceed 100.")
-        else:
-            valid_mark = True
+in_class_exercise_1 = getting_valid_grade("Planning an Application")
 
-    except ValueError:
-        print("Please enter a whole number.")
+in_class_exercise_2 = getting_valid_grade("Numeric and String Data")
 
+in_class_exercise_3 = getting_valid_grade("Selection")
 
-valid_mark = False
+in_class_exercise_4 = getting_valid_grade("Iteration")
 
-while valid_mark == False:
-    try:
-        in_class_exercise_2 = float(input("Please enter the Numeric and String Data mark: "))
-
-        if in_class_exercise_2 < 0:
-            print("Your mark cannot be negative.")
-        elif in_class_exercise_2 > 100:
-            print("Your mark cannot exceed 100.")
-        else:
-            valid_mark = True
-
-    except ValueError:
-        print("Please enter a whole number.")
-
-
-valid_mark = False
-
-while valid_mark == False:
-    try:
-        in_class_exercise_3 = float(input("Please enter the Selection mark: "))
-
-        if in_class_exercise_3 < 0:
-            print("Your mark cannot be negative.")
-        elif in_class_exercise_3 > 100:
-            print("Your mark cannot exceed 100.")
-        else:
-            valid_mark = True
-
-    except ValueError:
-        print("Please enter a whole number.")
-
-
-valid_mark = False
-
-while valid_mark == False:
-    try:
-        in_class_exercise_4 = float(input("Please enter the Iteration mark: "))
-
-        if in_class_exercise_4 < 0:
-            print("Your mark cannot be negative.")
-        elif in_class_exercise_4 > 100:
-            print("Your mark cannot exceed 100.")
-        else:
-            valid_mark = True
-
-    except ValueError:
-        print("Please enter a whole number.")
-
-
-valid_mark = False
-
-while valid_mark == False:
-    try:
-        in_class_exercise_5 = float(input("Please enter the Arrays mark: "))
-
-        if in_class_exercise_5 < 0:
-            print("Your mark cannot be negative.")
-        elif in_class_exercise_5 > 100:
-            print("Your mark cannot exceed 100.")
-        else:
-            valid_mark = True
-
-    except ValueError:
-        print("Please enter a whole number.")
+in_class_exercise_5 = getting_valid_grade("Arrays")
 
 # In-Class Exercise List
 in_class_exercise_list = [in_class_exercise_1, in_class_exercise_2, in_class_exercise_3, in_class_exercise_4, in_class_exercise_5]
