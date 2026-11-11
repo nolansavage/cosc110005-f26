@@ -88,25 +88,10 @@ in_class_exercise_5 = getting_valid_grade("Arrays")
 in_class_exercise_list = [in_class_exercise_1, in_class_exercise_2, in_class_exercise_3, in_class_exercise_4, in_class_exercise_5]
 
 
-
 # Class Assignment (1 total)
 print("Now please enter your Assignment 1: Iteration mark.")
 
-valid_mark = False
-
-while valid_mark == False:
-    try:
-        assignment_1 = float(input("Please enter your Assignment 1: Iteration mark: "))
-
-        if assignment_1 < 0:
-            print("Your mark cannot be negative.")
-        elif assignment_1 > 100:
-            print("Your mark cannot exceed 100.")
-        else:
-            valid_mark = True
-
-    except ValueError:
-        print("Please enter a whole number.")
+assignment_1 = getting_valid_grade("Assignment 1: Iteration")
 
 # Assignment 1 List
 assignment_1_list = [assignment_1]
@@ -115,42 +100,16 @@ assignment_1_list = [assignment_1]
 
 # Test marks (2 total, Practical and Theory)
 print("Now please enter your Midterm test grades.")
-
-
 # Test Theory
 valid_mark = False
 
-while valid_mark == False:
-    try:
-        test_theory = float(input("Please enter your mark for test one Theory: "))
-
-        if test_theory < 0:
-            print("Your mark cannot be negative.")
-        elif test_theory > 100:
-            print("Your mark cannot exceed 100.")
-        else:
-            valid_mark = True
-
-    except ValueError:
-        print("Please enter a whole number.")
+test_theory = getting_valid_grade("Test One Theory")
 
 
 # Test Practical
 valid_mark = False
 
-while valid_mark == False:
-    try:
-        test_practical = float(input("Please enter your mark for test one Practical: "))
-
-        if test_practical < 0:
-            print("Your mark cannot be negative.")
-        elif test_practical > 100:
-            print("Your mark cannot exceed 100.")
-        else:
-            valid_mark = True
-
-    except ValueError:
-        print("Please enter a whole number")
+test_practical = getting_valid_grade("Test One Practical")
 
 # Test List
 test_list = [test_theory, test_practical]
