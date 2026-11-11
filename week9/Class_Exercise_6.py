@@ -53,6 +53,15 @@ def getting_valid_grade(assignment_name):
 
     return mark
 
+# Function #2 - Percentage Calculation
+def percentage_calculation(grade_list):
+
+    grade_total = sum(grade_list)
+
+    grade_percentage = grade_total / len(grade_list)
+
+    return grade_percentage
+
 
 # ------------------------------------------------------------------------------------------
 
