@@ -127,7 +127,6 @@ assignment_1_percentage = percentage_calculation(assignment_1_list)
 
 test_1_percentage = percentage_calculation(test_list)
 
-
 total_midterm_grade = ((in_class_exercise_percentage * 0.25) + (assignment_1_percentage * 0.08) + (test_1_percentage * 0.16)) / 49 * 100
 
 # ----------------------------------------------------------------------------------
