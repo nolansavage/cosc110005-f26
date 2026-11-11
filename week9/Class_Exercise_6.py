@@ -119,20 +119,13 @@ test_list = [test_theory, test_practical]
 
 # ------------------------------------- PROCESS ------------------------------------
 
-# Getting the totals of each list
-in_class_exercise_total = sum(in_class_exercise_list)
-
-assignment_1_total = sum(assignment_1_list)
-
-test_1_total = sum(test_list)
-
 
 # Calculating the percentages
-in_class_exercise_percentage = in_class_exercise_total / 5
+in_class_exercise_percentage = percentage_calculation(in_class_exercise_list)
 
-assignment_1_percentage = assignment_1_total
+assignment_1_percentage = percentage_calculation(assignment_1_list)
 
-test_1_percentage = test_1_total / 2
+test_1_percentage = percentage_calculation(test_list)
 
 
 total_midterm_grade = ((in_class_exercise_percentage * 0.25) + (assignment_1_percentage * 0.08) + (test_1_percentage * 0.16)) / 49 * 100
