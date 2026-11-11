@@ -152,3 +152,58 @@ print("-------------------------------------------------------------------------
 
 
 # ------------------------------------ Desk Checks -----------------------------------------------
+
+# -------------------------------- DESK CHECKS --------------------------------
+
+# FUNCTION #1 - getting_valid_grade()
+
+# Purpose:
+# - Gets a grade from the user.
+# - Makes sure the input is not invalid before it gets accepted
+#
+# Desk Check:
+# - User enters "peaches"
+#   - It Cant convert the input into a number.
+#   - ValueError occurs and an error message is displayed.
+#
+# - User enters -5
+#   - The mark cant be less than 0
+#   - Displays the negative mark error message.
+#
+# - User enters 101
+#   - Mark is above 100.
+#   - Displays the maximum mark error message.
+#
+# - User enters 85
+#   - Mark is between 0 and 100.
+#   - valid_mark becomes True.
+#   - Function returns 85.0.
+#   - This is how the program should be treated.
+#
+# Expected Outcome:
+# - Function keeps asking until a valid grade is entered.
+# - Only accepts numbered grades between 0 and 100.
+
+
+# FUNCTION #2 - percentage_calculation()
+
+# Purpose:
+# - Calculates the average percentage from a list of grades.
+#
+# Desk Check:
+# - Input list: [76, 89, 93]
+# - grade_total = 76 + 89 + 93
+# - grade_total = 258
+# - len(grade_list) = 3
+# - grade_percentage = 258 / 3
+# - grade_percentage = 86
+# - Function returns 86.
+#
+# Expected Outcome:
+# - Adds all grades in the list together.
+# - Divides the total by the number of grades.
+# - Returns the average percentage.
+
+
+
+# ---------------------------------------------------- END OF PROGRAM ------------------------------------------------------- #
