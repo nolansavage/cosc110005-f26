@@ -76,8 +76,6 @@ def percentage_calculation(grade_list):
 # ------------------------------------------------------------------------------------------
 
 
-
-
 # -------------------------------- INPUT -----------------------------------------------
 
 # I am going to collect the values for each list. Starting with In-Class Exercises.
@@ -85,8 +83,8 @@ def percentage_calculation(grade_list):
 # Program Introduction
 print()
 print("Hello! In this program I will be calculating a midterm mark based on your inputs.")
-print("However, your input must be Valid. In order for the input to be valid, the inputs must be;")
-print("Numerical, cannot be a negative number and can also not exceed the maximum number for that assesment.")
+print("However, your input must be valid. In order for the input to be valid, the inputs must be;")
+print("Numerical, cannot be a negative number and can also not exceed the maximum number for that assessment.")
 
 
 # In-Class Exercises (5 total)
