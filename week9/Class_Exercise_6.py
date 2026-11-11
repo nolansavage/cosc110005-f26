@@ -16,7 +16,7 @@
 
 
 # --------------------------------------- MY PLAN ----------------------------------------
-# First ff I will create a function that will handle all of the grade inputs and validation.
+# First off, I will create a function that will handle all of the grade inputs and validation.
 # Then I will use a parameter called assignment_name so I can reuse that same function for multiple
 # different assignments, test and exercises.
 # The function will return the grade once it passes all the validation checks.
