@@ -97,18 +97,12 @@ assignment_1 = getting_valid_grade("Assignment 1: Iteration")
 assignment_1_list = [assignment_1]
 
 
-
 # Test marks (2 total, Practical and Theory)
 print("Now please enter your Midterm test grades.")
 # Test Theory
-valid_mark = False
-
 test_theory = getting_valid_grade("Test One Theory")
 
-
 # Test Practical
-valid_mark = False
-
 test_practical = getting_valid_grade("Test One Practical")
 
 # Test List
