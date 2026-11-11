@@ -16,11 +16,21 @@
 
 
 # --------------------------------------- MY PLAN ----------------------------------------
-# I know that I will need to create new functions to get rid of the redundancies in my code. I will do that
-# by adding new functions for validations and lists. For my mental visual on this I will create a NEW
-# section called "Functions"
+# First ff I will create a function that will handle all of the grade inputs and validation.
+# Then I will use a parameter called assignment_name so I can reuse that same function for multiple
+# different assignments, test and exercises.
+# The function will return the grade once it passes all the validation checks.
 
-# VALIDATION RULES
+# Then I will create another function that will handle the calculations of the average percentages
+# for each of the lists. This function will use sum() and len() to determine how many exactly grades
+# are within the list.
+# I will be using the functions throughout my program in order to save lines because a lot of my code was 
+# repeating itself in exercise #5.
+
+# I will be testing the program by checking for valid inputs and also invalid inputs to make sure the program
+# does what it is supposed to do.
+
+# --------------------------------------- VALIDATION RULES --------------------------------------
 # 1 - The input must be numerical.
 # 2 - The mark cannot be negative.
 # 3 - The mark cannot exceed the maximum possible mark for that assessment.
