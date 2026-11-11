@@ -95,6 +95,8 @@ in_class_exercise_5 = getting_valid_grade("Arrays")
 in_class_exercise_list = [in_class_exercise_1, in_class_exercise_2, in_class_exercise_3, in_class_exercise_4, in_class_exercise_5]
 
 
+
+
 # Class Assignment (1 total)
 print("Now please enter your Assignment 1: Iteration mark.")
 
@@ -102,6 +104,8 @@ assignment_1 = getting_valid_grade("Assignment 1: Iteration")
 
 # Assignment 1 List
 assignment_1_list = [assignment_1]
+
+
 
 
 # Test marks (2 total, Practical and Theory)
@@ -144,3 +148,7 @@ print(f"Your percentage for the practical and theory test is {test_1_percentage:
 print(f"Your total Midterm Grade is {total_midterm_grade:.2f}%. Good Job! Or maybe not, and that's fine too!")
 print("----------------------------------------YOUR MARKS :) ---------------------------------------------")
 print("---------------------------------------------------------------------------------------------------")
+
+
+
+# ------------------------------------ Desk Checks -----------------------------------------------
