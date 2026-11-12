@@ -103,8 +103,6 @@ in_class_exercise_5 = getting_valid_grade("Arrays")
 in_class_exercise_list = [in_class_exercise_1, in_class_exercise_2, in_class_exercise_3, in_class_exercise_4, in_class_exercise_5]
 
 
-
-
 # Class Assignment (1 total)
 print("Now please enter your Assignment 1: Iteration mark.")
 
