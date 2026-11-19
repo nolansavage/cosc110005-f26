@@ -130,7 +130,9 @@ while menu_choice != "3":
         translated_message = decode(coded_message)
 
         print("Your decoded message is:", translated_message)
-        
+    else:
+
+        print("That choice is invalid! Please enter 1, 2 or 3.")
 # --------------------------------------------------------------------------------------
 
 
