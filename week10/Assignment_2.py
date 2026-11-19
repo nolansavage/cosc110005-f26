@@ -40,7 +40,8 @@ def display_secret_code_menu():
 # --------------------------------------------------------------------------------------
 
 # ------------------------------------- PROCESS ----------------------------------------
-
+english_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+al_bhed_letters = "YPLTAVKREZGMSHUBXNCDIJFQOWypltavkrezgmshubxncdijfqow"
 
 
 # --------------------------------------------------------------------------------------
