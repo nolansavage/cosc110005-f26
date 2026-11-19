@@ -86,14 +86,6 @@ def decode(coded_message, key=1):
 
 # ------------------------------------------------------------------------------------------
 
-# --------------------------------------- MY PLAN ----------------------------------------
-
-
-
-# --------------------------------------------------------------------------------------
-
-
-
 # -------------------------------- INPUT -----------------------------------------------
 
 # The starting value for user menu selection
@@ -105,11 +97,12 @@ menu_choice = ""
 # ------------------------------------- PROCESS ----------------------------------------
 
 # Alphabets, english and al bhed language
+
 english_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 al_bhed_letters = "YPLTAVKREZGMSHUBXNCDIJFQOWypltavkrezgmshubxncdijfqow"
 
-# Main program loop
 
+# Main program loop
 while menu_choice != "3":
 
     display_secret_code_menu()
@@ -139,12 +132,4 @@ while menu_choice != "3":
     else:
 
         print("That choice is invalid! Please enter 1, 2 or 3.")
-# --------------------------------------------------------------------------------------
-
-
-
-# ---------------------------------- OUTPUT --------------------------------------------
-
-
-
 # --------------------------------------------------------------------------------------
