@@ -123,7 +123,14 @@ while menu_choice != "3":
         coded_message = encode(original_message)
 
         print("The encoded message is:", coded_message)
+    elif menu_choice == "2":
 
+        coded_message = input("Enter the Al Bhed message you want to decode: ")
+
+        translated_message = decode(coded_message)
+
+        print("Your decoded message is:", translated_message)
+        
 # --------------------------------------------------------------------------------------
 
 
