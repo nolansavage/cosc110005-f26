@@ -103,9 +103,26 @@ menu_choice = ""
 # --------------------------------------------------------------------------------------
 
 # ------------------------------------- PROCESS ----------------------------------------
+
+# Alphabets
 english_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 al_bhed_letters = "YPLTAVKREZGMSHUBXNCDIJFQOWypltavkrezgmshubxncdijfqow"
 
+# Main program loop
+
+while menu_choice != "3":
+
+    display_secret_code_menu()
+
+    menu_choice = input("Please enter your choice (1, 2 or 3): ")
+
+    if menu_choice == "1":
+
+        original_message = input("Enter the message you want to encode: ")
+
+        coded_message = encode(original_message)
+
+        print("The encoded message is:", coded_message)
 
 # --------------------------------------------------------------------------------------
 
