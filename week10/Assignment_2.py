@@ -104,7 +104,7 @@ menu_choice = ""
 
 # ------------------------------------- PROCESS ----------------------------------------
 
-# Alphabets
+# Alphabets, english and al bhed language
 english_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 al_bhed_letters = "YPLTAVKREZGMSHUBXNCDIJFQOWypltavkrezgmshubxncdijfqow"
 
