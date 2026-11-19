@@ -54,6 +54,36 @@ def encode(message, key=1):
 
     return current_message
 
+# Function to translate an Al Bhed message back into English
+
+def decode(coded_message, key=1):
+
+    current_translation = coded_message
+
+    for key_count in range(key):
+
+        translated_message = ""
+
+        for character_position in range(len(current_translation)):
+
+            letter_matched = False
+
+            for alphabet_position in range(len(al_bhed_letters)):
+
+                if current_translation[character_position] == al_bhed_letters[alphabet_position]:
+
+                    translated_message += english_letters[alphabet_position]
+
+                    letter_matched = True
+
+            if letter_matched == False:
+
+                translated_message += current_translation[character_position]
+
+        current_translation = translated_message
+
+    return current_translation
+
 # ------------------------------------------------------------------------------------------
 
 # --------------------------------------- MY PLAN ----------------------------------------
