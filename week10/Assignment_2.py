@@ -1,6 +1,6 @@
 # MAIN INFORMATION
 # Course: COSC 1100-05
-# Name: Assignment #2 - Secret Codes
+# Name: Assignment #2 - Arrays & Functions
 # Author: Nolan Savage
 # Date: 2026-11-17
 # Group: (individual)
@@ -8,6 +8,9 @@
 
 # ---------------------------- PROGRAM DESCRIPTION -----------------------------------
 
+# This program will let the user encode and decode messages by using a substitution cipher. The cipher
+# is based off of the Al Bhed language. The program will ask the user whether they want to encode or
+# decode a message, or to just simply exit the program.
 
 
 # ----------------------------------------------------------------------------------------
