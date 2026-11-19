@@ -127,7 +127,7 @@ while menu_choice != "3":
 
     elif menu_choice == "3":
 
-        print("Thank you for using the Secret Code Translator!")
+        print("Thank you, for using the Secret Code Translator!")
 
     else:
 
